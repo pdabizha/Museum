@@ -1,0 +1,2 @@
+const e=document.querySelector(".gallery__images"),t=document.querySelectorAll(".gallery__dot"),l=()=>window.innerWidth>=768&&window.innerWidth<1024?2:1,o=o=>{let r=l(),a=parseFloat(getComputedStyle(e).gap)||0,n=e.offsetWidth/r;e.style.transform=`translateX(${-(o*(n+a))}px)`,t.forEach((e,t)=>{e.classList.toggle("gallery__dot--active",t===o)})};t.forEach((e,t)=>{e.addEventListener("click",()=>{o(t)})});
+//# sourceMappingURL=index.eb270ed9.js.map
